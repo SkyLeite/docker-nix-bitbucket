@@ -20,7 +20,7 @@ jobs:
       - name: Calculate Docker image tags
         id: tags
         env:
-          DOCKER_IMAGES: "ghcr.io/SkyLeite/nix-bitbucket"
+          DOCKER_IMAGES: "ghcr.io/skyleite/nix-bitbucket"
         run: |
           VERSION=$(head -1 Dockerfile | cut -d ':' -f 2)
           TAGS=()
