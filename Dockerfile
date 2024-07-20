@@ -10,6 +10,7 @@ RUN set -x && \
 RUN set -x && \
     ln -s $(which echo) /bin && \
     ln -s $(which cat) /bin && \
+    ln -s $(which cp) /bin && \
     ln -s $(which mkfifo) /usr/bin
 
 # Enable flakes
